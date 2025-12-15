@@ -1,0 +1,85 @@
+body{
+  background-position: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 250%;
+  background-image: url(darked.gif);
+}
+form{
+  width:80%;
+  height:500px;
+  position: flex;
+  text-align: center;
+  margin: 220px 50px 10px 80px;
+  border-radius: 30px;
+  padding-top: 150px;
+  background-image: url(darked.gif);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+}
+h1{
+  color : wheat;
+  text-shadow: 10px 10px 10px green, -10px -10px 10px red;
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+form label{
+  color: white;
+  text-shadow: 10px 10px 10px green, -10px -10px 10px red;
+}
+.blok{
+  width:500px;
+  height: 50px;
+  margin-bottom: 80px;
+  border : 2px wheat solid;
+  border-radius: 10px;
+  background-image: url(darked.gif);
+  background-repeat: no-repeat;
+  background-position: center ;
+  background-size: cover;
+  box-shadow: 
+    -10px -10px 30px 2px green,
+    -10px -10px 30px 5px red inset;
+  
+  transition: 
+    background-color 0.3s,
+    box-shadow 0.3s,
+    border 0.3s;
+}
+.blok:not(:placeholder-shown){
+  background-image: none;
+  background-color: white;
+  color: black;
+
+  border: 2px solid #4a90e2;
+  box-shadow: 0 0 12px rgba(74,144,226,0.6);
+}
+.blok:focus{
+  background-image: none;
+  background-color: white;
+  color: black;
+}
+.button{
+  background: crimson;
+  border-color: wheat;
+  padding:10px;
+  margin-top:-50px;
+  width :50%;
+  border-radius: 20px;
+  box-shadow: 
+    -10px -10px 30px 5px green,
+    -10px -10px 30px 20px red ;
+  cursor: pointer;
+}
+.button:hover{
+  background: green;
+}
+.h4{
+  color : white;
+  font-size: 50px;
+  margin-left: 30px;
+}
+.loo{
+  color : green;
+}
