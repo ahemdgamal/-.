@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="login-style.css">
+  <title> login my bage </title>
+</head>
+<body>
+  
+  <form>
+  <h1> log in to 🅰️</h1>
+ 
+    <label> user name </label>
+        <input type="text" placeholder=" your name" class="blok" id="usernameInput"> <br>
+    <label> email </label>
+        <input type="email" placeholder=" your email" class="blok"> <br>
+    <label> password </label>
+        <input type=" password " placeholder=" your password" class="blok"> <br>
+    < href="index.html">
+  <button type="button" class="button">submit</button>
+</>
+    <br>
+  <pre>  <h3 class="h3"> I don't have an account </h3>   <a href="create-acount.html"><h2 class="create"> create your account </h2></a>
+      
+  </form>
+  <script>
+  // نختار الزرار الموجود داخل الفورم
+  const submitBtn = document.querySelector('.button');
+  const nameInput = document.getElementById('usernameInput');
+
+  submitBtn.addEventListener('click', function(e) {
+    // نأخذ القيمة المكتوبة في خانة الاسم
+    const name = nameInput.value;
+
+    if (name.trim() !== "") {
+      // نخزن الاسم في ذاكرة المتصفح
+      localStorage.setItem('userDisplayName', name);
+      // ننتقل لصفحة الـ index
+      window.location.href = "index.html";
+    } else {
+      alert("Please enter your name first!");
+    }
+  });
+</script>
+
+</body>
+</html>
